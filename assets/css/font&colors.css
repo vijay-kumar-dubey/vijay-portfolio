@@ -1,0 +1,549 @@
+
+
+
+body{
+  font-family: var(--primary-font);
+  /* font-family: var(--secondary-font); */
+
+}
+
+/* colors */
+
+:root {
+  --themeprimaryclr: #f78b77;
+  --dark-primary:#00809d;
+  --themesecondaryclr: #00809db5;
+  --plainclr: #fff;
+  --darkclr: #000;
+  --themehoverclr: #ffed3b;
+  --bs-table-color: #cdcdcd;
+  --header-bg:#435050;
+  --text-color:#696969;
+  --card1-color:#439300;
+  --card2-color:#003B62;
+  --card3-color:#660095;
+  --card4-color:#9E5400;
+  --card5-color:#0014A2;
+  --card6-color:#A70000;
+  --card7-color:#007474;
+  --card8-color:#FB302E;
+  --card9-color:#E8A000;
+  --card10-color:#483C92;
+  --card11-color:#528BC9;
+  --table-color1:#00AC06;
+  --table-color2:#F43D3E;
+  --disable-btn-clr:#DEDEDE;
+  --color1:#555555;
+  --color2:#D9D9D9;
+  --color3:#444444;
+  --color4:#059005;
+  --color5:#00000099;
+  
+  
+  /* --stars-color:#fbd34e; */
+  --stars-color:#FABB05;
+  --open-now-color:#00AE14;
+
+  --text-color:#7B7B7B;
+  --text-color1:#777777;
+  --text-color2:#c9c9c9;
+  --text-color3:#717171;
+  --text-color4:#373737;
+  --text-color5:#8D8D8D;
+  --text-color6:#333333;
+  --text-color7:#7C7C7C;
+  --text-color8:#00000080;
+  --text-color9:#000000CC;
+  --text-color10:#00000066;
+  --text-color11:#00A651;
+  --text-color12:#EE3131;
+  --text-color13:#387ABE;
+  --text-color14:#223142;
+  
+
+/* bg color  */
+  --light-bg:#f1f1f1;
+  --light-primary-bg:#E6F5FF;
+  --dark-shadow:#D9D9D9;
+  --card1-bg:#EEFFE0;
+  --card2-bg:#E6F5FF;
+  --card3-bg:#F9ECFF;
+  --card4-bg:#FFF7EE;
+  --card5-bg:#EFF1FF;
+  --card6-bg:#FFEEEE;
+  --card7-bg:#E3FFFF;
+  --card8-bg:#F6DFDF;
+  --card9-bg:#FFEFCA;
+  --card10-bg:#DFF6F6;
+  --card11-bg:#EDDFF6;
+  --card12-bg:#F6DFE0;
+  --card13-bg:#DFF6EE;
+  --bg-color1:#F9F9F9;
+  --bg-color2:#EADEFF;
+  --bg-color3:#FFFCB0;
+  --bg-color4:#DBFFD8;
+  --bg-color5:#FFD9DB;
+  --bg-color6:#FFEFD7;
+  --bg-color7:#DBFFDD;
+  --bg-color8:#E5FFE6;
+  --bg-color9:#FFEEC2;
+  --bg-color10:#BAFFFF;
+  --bg-color11:#F3F3F3;
+  --bg-color12:#FBFBFB;
+  --bg-color13:#EDFEFF;
+  --bg-color14:#FFE1E0;
+  --bg-color15:#f8d7da;
+  --bg-color16:#F7FFF6;
+  --bg-color17:#daffe8;
+  --bg-color18:#f2f2f2cc;
+  --bg-color19:#e5f9ff;
+  --bg-color20:#ECF7FF;
+  --bg-color21:#ffdada;
+  --bg-color22:#ddd;
+  --bg-color23:#FFECEC;
+  --bg-color24:#f0f8ff;
+
+  --table-bg-clr:#FFF2F2;
+  
+  
+  
+  --gray-bg1:#EEEEEE;
+  --footer-bg:#372B6F;
+  --tab1-bg:#FFEDD8;
+  --tab2-bg:#E8FFEC;
+  --circle1-bg:#FFFFFF1F;
+  --circle2-bg:#FFF9F921;
+  --bread-bg:#F6F6F6;
+  --light-pink-bg:#FFE5E5;
+  --table-border1:#D2D2D2;
+
+
+  
+
+  /* border  */
+  --gray-border:gray;
+  --border-color2:#D9D9D9;
+  --border-color3:#0000001A;
+  --border-color4:#00000010;
+  --border-color5:#00000033;
+  --border-color6:#ABABAB;
+  --border-color7:#EBEBEB;
+  --border-color8:#0000000D;
+  --border-color9:#ccc;
+
+  /* shadow */
+  --shadow1:#00000040;
+  --shadow2:#DBDBDB40;
+
+  /* bottom btn color  */
+  --bottom-btn-bg1:#201169;
+  --bottom-btn-bg2:#e20200;
+
+  /* font  */
+  --primary-font:'Roboto Regular';
+  --secondary-font:'Barlow Semi Condensed Regular';
+}
+
+
+/* font family  */
+
+@font-face {
+  font-family: 'Plus Jakarta Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Plus Jakarta Sans Regular'), url('../font/PlusJakartaSans[wght].woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Plus Jakarta Sans Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Plus Jakarta Sans Italic'), url('../font/PlusJakartaSans-Italic[wght].woff') format('woff');
+  }
+
+  /* monserate font  */
+      @font-face {
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Regular'), url('../font/Montserrat-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Italic'), url('../font/Montserrat-Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Thin'), url('../font/Montserrat-Thin.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Thin Italic'), url('../font/Montserrat-ThinItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat ExtraLight'), url('../font/Montserrat-ExtraLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat ExtraLight Italic'), url('../font/Montserrat-ExtraLightItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Light'), url('../font/Montserrat-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Light Italic'), url('../font/Montserrat-LightItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Medium'), url('../font/Montserrat-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Medium Italic'), url('../font/Montserrat-MediumItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat SemiBold'), url('../font/Montserrat-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat SemiBold Italic'), url('../font/Montserrat-SemiBoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Bold'), url('../font/Montserrat-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Bold Italic'), url('../font/Montserrat-BoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat ExtraBold'), url('../font/Montserrat-ExtraBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat ExtraBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat ExtraBold Italic'), url('../font/Montserrat-ExtraBoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Black'), url('../font/Montserrat-Black.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Montserrat Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Black Italic'), url('../font/Montserrat-BlackItalic.woff') format('woff');
+    }
+
+
+    /* barlow semi condenced font  */
+        @font-face {
+    font-family: 'Barlow Semi Condensed Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Regular'), url('../font/BarlowSemiCondensed-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Italic'), url('../font/BarlowSemiCondensed-Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Thin'), url('../font/BarlowSemiCondensed-Thin.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Thin Italic'), url('../font/BarlowSemiCondensed-ThinItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed ExtraLight'), url('../font/BarlowSemiCondensed-ExtraLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed ExtraLight Italic'), url('../font/BarlowSemiCondensed-ExtraLightItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Light'), url('../font/BarlowSemiCondensed-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Light Italic'), url('../font/BarlowSemiCondensed-LightItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Medium'), url('../font/BarlowSemiCondensed-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Medium Italic'), url('../font/BarlowSemiCondensed-MediumItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed SemiBold'), url('../font/BarlowSemiCondensed-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed SemiBold Italic'), url('../font/BarlowSemiCondensed-SemiBoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Bold'), url('../font/BarlowSemiCondensed-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Bold Italic'), url('../font/BarlowSemiCondensed-BoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed ExtraBold'), url('../font/BarlowSemiCondensed-ExtraBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed ExtraBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed ExtraBold Italic'), url('../font/BarlowSemiCondensed-ExtraBoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Black'), url('../font/BarlowSemiCondensed-Black.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Barlow Semi Condensed Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow Semi Condensed Black Italic'), url('../font/BarlowSemiCondensed-BlackItalic.woff') format('woff');
+    }
+
+
+    /* roboto regular font  */
+        @font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Regular'), url('../font/Roboto-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Italic'), url('../font/Roboto-Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Bold'), url('../font/Roboto-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Bold Italic'), url('../font/Roboto-BoldItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Thin'), url('../font/Roboto-Thin.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Thin Italic'), url('../font/Roboto-ThinItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Light'), url('../font/Roboto-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Light Italic'), url('../font/Roboto-LightItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Medium'), url('../font/Roboto-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Medium Italic'), url('../font/Roboto-MediumItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Black'), url('../font/Roboto-Black.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Roboto Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Black Italic'), url('../font/Roboto-BlackItalic.woff') format('woff');
+    }

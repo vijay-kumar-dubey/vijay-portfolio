@@ -1,0 +1,128 @@
+
+
+/* skills */
+
+.skills .skill-card {
+    border-bottom: 3px solid var(--themeprimaryclr);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+    border-radius: 22px;
+
+}
+
+.skills .skill-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--themeprimaryclr);
+    /* React color or any other */
+    z-index: -1;
+    transition: height 0.4s linear;
+}
+
+.skill-card:hover::before {
+    height: 100%;
+}
+
+.skill-card:hover .card-body,
+.skill-card:hover h6,
+.skill-card:hover i {
+    color: var(--plainclr) !important;
+}
+
+
+.skills .skill-card .content h6 {
+    font-weight: 600;
+}
+
+.skills .skill-card .icons {
+    margin-bottom: 10px;
+}
+
+.skills .skill-card .icons i {
+    font-size: 2.5rem;
+}
+
+.skills .skill-card .icons i.react {
+    color: #61DBFB;
+}
+
+.skills .skill-card .icons i.html {
+    color: #E34F26;
+}
+
+.skills .skill-card .icons i.css {
+    color: #1572B6;
+}
+
+.skills .skill-card .icons i.js {
+    color: #F7DF1E;
+}
+
+.skills .skill-card .icons i.sass {
+    color: #CD6799;
+}
+
+.skills .skill-card .icons i.git {
+    color: #F1502F;
+}
+
+.skills .skill-card .icons i.github {
+    color: #181717;
+}
+
+.skills .skill-card .icons i.bootstrap {
+    color: #7952B3;
+}
+
+.skills .skill-card .icons i.php {
+    color: #777BB4;
+}
+
+.skills .skill-card .icons i.figma {
+    color: #F24E1E;
+}
+
+
+/* brands */
+.brand-card{
+    height: 100px !important;
+    position: relative;
+    border: 1px solid var(--border-color2);
+    border-radius: 18px;
+    transition: all .5s linear;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
+    border-left: 3px solid var(--themeprimaryclr) !important;
+}
+.brand-card:hover{
+    transform: translateY(-5px);
+}
+/* .brand-card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--themeprimaryclr);
+    width: 4px;
+    height: 100%;
+
+} */
+.brand-card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.VIpgJd-ZVi9od-xl07Ob-OEVmcd{
+    z-index: 10000002;
+    border: none;
+    position: fixed;
+    box-shadow: 0 0px 0px 0px #999;
+}

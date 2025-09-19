@@ -1,0 +1,92 @@
+.banner{
+    background: linear-gradient(to right, #ffe1dc, #aef0ff6e);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+.banner h1{
+    color: #333;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+
+
+
+
+/* about us  */
+.about .images {
+    border: 20px solid var(--themeprimaryclr);
+    border-top: 20px solid #f78b773d;
+    border-right: 20px solid #f78b773d;
+    border-bottom: 20px solid #f78b773d;
+}
+
+.about .images img {
+    margin: 20px 0 20px 20px;
+    border: 20px solid var(--themesecondaryclr);
+    border-top: 20px solid #00809d4f;
+    border-right: 20px solid #00809d4f;
+    border-bottom: 20px solid #00809d4f;
+    z-index: 11111;
+    position: relative;
+}
+
+/* education  */
+.education h4{
+    color: var(--themeprimaryclr);
+    font-weight: 600;
+}
+.education h5{
+    color: var(--themesecondaryclr);
+    font-weight: 500;
+}
+.edication-card{
+    border-left: 3px solid var(--dark-primary) !important;
+    transition: all .5s linear;
+}
+.edication-card:hover{
+    transform: scale(1.04);
+    z-index: 111;
+}
+
+
+/* experience  */
+
+.experience h4{
+    color: var(--themesecondaryclr);
+    font-weight: 600;
+}
+.experience h5{
+    color: var(--themeprimaryclr);
+    font-weight: 500;
+}
+.experience-card{
+    border-left: 3px solid var(--themeprimaryclr) !important;
+    transition: all .5s linear;
+}
+.experience-card:hover{
+    transform: scale(1.04);
+    z-index: 111;
+}
+
+/* Strength-Hobbies */
+
+.strength-hobbies h4{
+    color: var(--themeprimaryclr);
+    font-weight: 600;
+}
+.strength-hobbies h5{
+    color: var(--themesecondaryclr);
+    font-weight: 500;
+}
+.strength-hobbies-card{
+    border-left: 3px solid var(--dark-primary) !important;
+    transition: all .5s linear;
+}
+.strength-hobbies-card:hover{
+    transform: scale(1.04);
+    z-index: 111;
+}

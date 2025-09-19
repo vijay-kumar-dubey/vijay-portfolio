@@ -1,0 +1,428 @@
+.main-header {
+    background-image: linear-gradient(to right, var(--dark-primary) 0%, var(--dark-primary) 30%, var(--plainclr) 30%, var(--plainclr)100%);
+    min-height: 60vh;
+    border-bottom: 2px solid var(--dark-primary);
+}
+
+@media (max-width:1260px) {
+    .main-header{
+        background-image: linear-gradient(to right, var(--dark-primary) 0%, var(--dark-primary) 22%, var(--plainclr) 22%, var(--plainclr)100%);
+    }
+}
+@media (max-width:1199px) {
+    .main-header{
+        background-image: linear-gradient(to right, var(--dark-primary) 0%, var(--dark-primary) 26%, var(--plainclr) 26%, var(--plainclr)100%);
+    }
+}
+@media (max-width:991px) {
+    .main-header{
+        background-image: none;
+    }
+}
+@media (max-width:767px) {
+
+    .hero .content {
+        text-align: center;
+    }
+}
+
+.hero .images {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 10px solid var(--dark-primary);
+    padding: 30px;
+    background: var(--plainclr);
+}
+
+@media (max-width:991px) {
+    .hero .images {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .hero .images img {
+        display: block;
+        margin: auto;
+    }
+}
+
+
+.hero .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid var(--dark-primary);
+}
+
+.hero h1 {
+    color: var(--themesecondaryclr);
+    font-weight: 600;
+    font-size: 44px;
+}
+
+
+/* service sec  */
+.service-card {
+    border: 0;
+    padding: 20px;
+    border: 1px solid var(--border-color2);
+    border-radius: 22px;
+    transition: all .5s linear;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
+
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+}
+
+.service-card p {
+    margin-bottom: 0;
+}
+
+.service-card .images {
+    background: var(--plainclr);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+
+.service-card:hover .images {
+    transform: translateY(-10px);
+}
+
+.service-card .images img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.service-card1 {
+    background-color: var(--card1-bg);
+}
+
+.service-card1 h5 {
+    color: var(--card1-color);
+}
+
+.service-card1 .images {
+    border: 3px solid var(--card1-color);
+}
+
+.service-card2 {
+    background-color: var(--card2-bg);
+}
+
+.service-card2 h5 {
+    color: var(--card2-color);
+}
+
+.service-card2 .images {
+    border: 3px solid var(--card2-color);
+}
+
+.service-card3 {
+    background-color: var(--card3-bg);
+}
+
+.service-card3 h5 {
+    color: var(--card3-color);
+}
+
+.service-card3 .images {
+    border: 3px solid var(--card3-color);
+}
+
+.service-card4 {
+    background-color: var(--card4-bg);
+}
+
+.service-card4 h5 {
+    color: var(--card4-color);
+}
+
+.service-card4 .images {
+    border: 3px solid var(--card4-color);
+}
+
+.service-card5 {
+    background-color: var(--card5-bg);
+}
+
+.service-card5 h5 {
+    color: var(--card5-color);
+}
+
+.service-card5 .images {
+    border: 3px solid var(--card5-color);
+}
+
+.service-card6 {
+    background-color: var(--card6-bg);
+}
+
+.service-card6 h5 {
+    color: var(--card6-color);
+}
+
+.service-card6 .images {
+    border: 3px solid var(--card6-color);
+}
+
+/* about us  */
+.about .images {
+    border: 20px solid var(--themeprimaryclr);
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.about .images img {
+    margin: 0 0 20px 20px;
+}
+
+/* skills */
+
+.skills .skill-card {
+    border-bottom: 3px solid var(--themeprimaryclr);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+    border-radius: 22px;
+
+}
+
+.skills .skill-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--themeprimaryclr);
+    /* React color or any other */
+    z-index: -1;
+    transition: height 0.4s linear;
+}
+
+.skill-card:hover::before {
+    height: 100%;
+}
+
+.skill-card:hover .card-body,
+.skill-card:hover h6,
+.skill-card:hover i {
+    color: var(--plainclr) !important;
+}
+
+
+.skills .skill-card .content h6 {
+    font-weight: 600;
+}
+
+.skills .skill-card .icons {
+    margin-bottom: 10px;
+}
+
+.skills .skill-card .icons i {
+    font-size: 2.5rem;
+}
+
+.skills .skill-card .icons i.react {
+    color: #61DBFB;
+}
+
+.skills .skill-card .icons i.html {
+    color: #E34F26;
+}
+
+.skills .skill-card .icons i.css {
+    color: #1572B6;
+}
+
+.skills .skill-card .icons i.js {
+    color: #F7DF1E;
+}
+
+.skills .skill-card .icons i.sass {
+    color: #CD6799;
+}
+
+.skills .skill-card .icons i.git {
+    color: #F1502F;
+}
+
+.skills .skill-card .icons i.github {
+    color: #181717;
+}
+
+.skills .skill-card .icons i.bootstrap {
+    color: #7952B3;
+}
+
+.skills .skill-card .icons i.php {
+    color: #777BB4;
+}
+
+.skills .skill-card .icons i.figma {
+    color: #F24E1E;
+}
+
+
+
+/* projects  */
+.projects .project-card{
+    /* border-bottom: 3px solid var(--themesecondaryclr); */
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
+        padding: 0.5rem;
+}
+.projects .project-card:hover .content h5,
+.projects .project-card:hover .content p{
+    color: var(--plainclr);
+}
+.projects .project-card:hover .btn-theme-two{
+    border: 1px solid var(--plainclr) !important;
+    background: transparent;
+}
+.projects .project-card h5{
+    color: var(--themeprimaryclr);
+    margin-top: 10px;
+    font-weight: 600;
+}
+.projects .project-card p{
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+}
+.projects .project-card .images-part{
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+.projects .project-card .images {
+    height: 100%;
+    overflow: hidden;
+}
+
+.projects .project-card .images img {
+    display: block;
+    width: 100%;
+    transition: transform 5s linear;
+    /* Smooth scroll */
+}
+
+.projects .project-card:hover img {
+    transform: translateY(-50%);
+    /* Adjust this value depending on image height */
+}
+.projects .project-card {
+    /* border-bottom: 3px solid var(--themesecondaryclr); */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
+    padding: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    /* transition: linear; */
+}
+
+.projects .project-card .card-body{
+    position: relative;
+    z-index: 100;
+}
+.projects .project-card:before {
+    position: absolute;
+    content: '';
+    background: var(--themesecondaryclr);
+    height: 40px;
+    top: -10px;
+    right: -12px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+    z-index: -1;
+}
+
+.projects .project-card:after {
+    position: absolute;
+    content: '';
+    background: var(--themeprimaryclr);
+    height: 40px;
+    bottom: -11px;
+    left: -11px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+    z-index: -1;
+}
+
+
+.projects .project-card:hover:before {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    border-radius: 0;
+    top: 0;
+    bottom: auto; 
+}
+
+
+.projects .project-card:hover:after {
+    width: 50%;
+    height: 100%;
+    left: 0;
+    border-radius: 0;
+    bottom: 0;
+    top: auto; 
+}
+
+
+
+/* brands */
+.brand-card{
+    height: 100px !important;
+    position: relative;
+    border: 1px solid var(--border-color2);
+    border-radius: 18px;
+    transition: all .5s linear;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 2.6px;
+    border-left: 3px solid var(--themeprimaryclr) !important;
+}
+.brand-card:hover{
+    transform: translateY(-5px);
+}
+/* .brand-card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--themeprimaryclr);
+    width: 4px;
+    height: 100%;
+
+} */
+.brand-card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.VIpgJd-ZVi9od-xl07Ob-OEVmcd{
+    z-index: 10000002;
+    border: none;
+    position: fixed;
+    box-shadow: 0 0px 0px 0px #999;
+}
+
+
