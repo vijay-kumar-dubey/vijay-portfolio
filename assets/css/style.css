@@ -17,12 +17,14 @@
 @media (max-width:991px) {
     .main-header{
         background-image: none;
+        min-height: auto;
     }
 }
 @media (max-width:767px) {
 
     .hero .content {
         text-align: center;
+        min-height: auto;
     }
 }
 
