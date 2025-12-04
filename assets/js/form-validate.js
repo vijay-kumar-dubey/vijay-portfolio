@@ -1,14 +1,26 @@
 
-function validateForm(event) {
-    const form = event.target;
+const form = document.getElementById('myForm');
 
-    // Native HTML5 validation
-    if (!form.checkValidity()) {
-        form.reportValidity(); // shows browser's default tooltip
-        return false;
-    }
 
-    // If everything is valid, you can proceed to submit (AJAX or regular)
-    alert("Form submitted successfully!");
-    return true;
-}
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); 
+
+    
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+    })
+        .then(response => {
+            if (response.ok) {
+                
+                alert("Form submitted successfully!");
+                window.location.reload();  
+            } else {
+                alert("There was an error submitting the form.");
+            }
+        })
+        .catch(error => {
+            alert("There was an error submitting the form.");
+            console.error("Error:", error);
+        });
+});

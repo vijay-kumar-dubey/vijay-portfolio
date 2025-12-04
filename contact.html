@@ -120,12 +120,13 @@
                 <div class="col-lg-6 col-md-12 ">
                     <div class="get-in-touch border ms-lg-3 ">
                         <h2 class="mb-3 text-center headings"><span class="text1">Get in</span> <span class="text2">Touch</span></h2>
-                        <form onsubmit="return validateForm(event)">
+                        <form  action="https://formspree.io/f/xqarlzvn"
+  method="POST">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter your first name"
-                                            required pattern="[A-Za-z]{2,}"
+                                        <input type="text" name="firstname" class="form-control" placeholder="Enter your first name"
+                                            required 
                                             title="Enter a valid first name (letters only)">
                                         <div class="icons">
                                             <i class="fa fa-user"></i>
@@ -134,31 +135,31 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter your last name"
-                                            required pattern="[A-Za-z]{2,}"
+                                        <input type="text" name="lastname" class="form-control" placeholder="Enter your last name"
+                                            required 
                                             title="Enter a valid last name (letters only)">
                                         <i class="fa fa-user"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Enter your email"
+                                        <input type="email" name="email" class="form-control" placeholder="Enter your email"
                                             required>
                                         <i class="fa fa-envelope"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Enter your phone" required
+                                        <input type="tel" name="mobile" class="form-control" placeholder="Enter your phone" required
                                             pattern="[0-9]{10}" title="Enter a 10-digit phone number">
                                         <i class="fa fa-phone"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="textarea" id="textarea" rows="5" cols="12" class="form-control"
+                                        <textarea name="message" id="textarea" rows="5" cols="12" class="form-control"
                                             placeholder="Enter your message" required minlength="10"
-                                            title="Message should be at least 10 characters long"></textarea>
+                                            title="Message should be at least 10 characters long" autocomplete></textarea>
                                         <i class="fa-solid fa-message"></i>
                                     </div>
                                 </div>
@@ -174,7 +175,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group mb-0">
-                                        <button type="submit" class=" btn-theme-two mt-2 border-0">Submit</button>
+                                        <button type="submit"  class=" btn-theme-two mt-2 border-0">Submit</a>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +251,7 @@
     <!-- js link  -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/form-validate.js"></script>
+    <!-- <script src="./assets/js/form-validate.js"></script> -->
 <script src='https://www.noupe.com/embed/019a9bd696ce70eda605bd17b4c70e2c22f1.js'></script>
 
 
