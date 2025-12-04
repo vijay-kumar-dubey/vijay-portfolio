@@ -1,26 +1,24 @@
+function validateForm(event) {
+        const form = event.target;
 
-const form = document.getElementById('myForm');
+        // Check form validity
+        if (!form.checkValidity()) {
+            form.reportValidity(); 
+            return false;
+        }
 
-
-form.addEventListener('submit', function (event) {
-    event.preventDefault(); 
-
-    
-    fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form)
-    })
-        .then(response => {
-            if (response.ok) {
-                
-                alert("Form submitted successfully!");
-                window.location.reload();  
-            } else {
-                alert("There was an error submitting the form.");
-            }
-        })
-        .catch(error => {
-            alert("There was an error submitting the form.");
-            console.error("Error:", error);
+        // SweetAlert on successful form submission
+        Swal.fire({
+            icon: 'success',
+            title: 'Form submitted successfully!',
+            text: 'Thank you for your submission.',
+            confirmButtonText: 'OK',
+            timer: 3000,  // Optional: auto-close after 3 seconds
+            showConfirmButton: true  // You can keep this true to require the user to click 'OK'
+        }).then(() => {
+            // Optionally, refresh the page after SweetAlert
+            window.location.reload();
         });
-});
+
+        return true;
+    }
